@@ -1,0 +1,10 @@
+{
+  "name": "Development Container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
+  "features": {
+    "ghcr.io/wandb/catnip/feature:1": {}
+  },
+  "forwardPorts": [
+    6369
+  ]
+}
