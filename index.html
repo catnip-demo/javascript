@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Travel Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header>
+            <h1>🚀 Space Travel Explorer</h1>
+            <p>Discover the wonders of our solar system</p>
+        </header>
+
+        <main>
+            <section class="planet-selector">
+                <h2>Select a Destination</h2>
+                <div class="planet-grid">
+                    <button class="planet-btn" data-planet="mercury">Mercury</button>
+                    <button class="planet-btn" data-planet="venus">Venus</button>
+                    <button class="planet-btn" data-planet="earth">Earth</button>
+                    <button class="planet-btn" data-planet="mars">Mars</button>
+                    <button class="planet-btn" data-planet="jupiter">Jupiter</button>
+                    <button class="planet-btn" data-planet="saturn">Saturn</button>
+                    <button class="planet-btn" data-planet="uranus">Uranus</button>
+                    <button class="planet-btn" data-planet="neptune">Neptune</button>
+                </div>
+            </section>
+
+            <section class="planet-info" id="planetInfo">
+                <h2 id="planetName">Select a planet to begin your journey</h2>
+                <div class="info-content">
+                    <p id="planetDescription">Click on any planet above to learn more about it and plan your space travel adventure!</p>
+                    <div class="stats" id="planetStats"></div>
+                </div>
+                <button class="launch-btn" id="launchBtn" style="display: none;">Launch Mission!</button>
+            </section>
+
+            <section class="mission-status" id="missionStatus" style="display: none;">
+                <h3>Mission Status</h3>
+                <div class="rocket">🚀</div>
+                <p id="statusMessage"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Explore the cosmos, one planet at a time</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
